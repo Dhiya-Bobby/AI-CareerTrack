@@ -3,9 +3,9 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-// Supported model cascade: primary model with verified fallback alternatives
-const PRIMARY_MODEL = process.env.GEMINI_MODEL || 'gemini-3.8-flash';
-const VERIFIED_FALLBACK_MODELS = ['gemini-3.8-flash', 'gemini-3.1-flash-lite', 'gemini-3.5-flash'];
+// Supported model cascade: fast responsive primary model with verified fallback alternatives
+const PRIMARY_MODEL = process.env.GEMINI_MODEL || 'gemini-3.1-flash-lite';
+const VERIFIED_FALLBACK_MODELS = ['gemini-3.1-flash-lite', 'gemini-3.5-flash', 'gemini-3.8-flash'];
 
 /**
  * Returns an authenticated GoogleGenAI client instance.
@@ -20,7 +20,7 @@ export function getAiClient(): GoogleGenAI | null {
       headers: {
         'User-Agent': 'aistudio-build',
       },
-      timeout: 30000, // 30-second API request timeout
+      timeout: 25000, // 25-second API request timeout per attempt
     },
   });
 }
@@ -28,38 +28,53 @@ export function getAiClient(): GoogleGenAI | null {
 export const ai = getAiClient();
 
 /**
- * Helper to determine if an error is a temporary retryable error (503 Service Unavailable / high demand, 429 Rate Limit, 404 model rotation, or timeout).
+ * Helper to determine if an error is a temporary retryable error (504 Deadline Exceeded, 503 Service Unavailable / high demand, 429 Rate Limit, 404 model rotation, or timeout).
  */
 function isRetryableError(err: any): boolean {
   if (!err) return false;
-  const status = err.status || err.code || err.statusCode;
-  const message = String(err.message || '').toLowerCase();
+  const status = err.status || err.code || err.statusCode || err.error?.code || err.error?.status;
+  const rawMsg = (
+    String(err.message || '') +
+    ' ' +
+    String(err.error?.message || '') +
+    ' ' +
+    String(status || '') +
+    ' ' +
+    (typeof err === 'object' ? JSON.stringify(err) : '')
+  ).toLowerCase();
 
   return (
+    status === 504 ||
     status === 503 ||
     status === 429 ||
     status === 404 ||
-    message.includes('503') ||
-    message.includes('429') ||
-    message.includes('404') ||
-    message.includes('high demand') ||
-    message.includes('overloaded') ||
-    message.includes('resource_exhausted') ||
-    message.includes('not found') ||
-    message.includes('temporarily unavailable') ||
-    message.includes('timeout') ||
-    message.includes('deadline exceeded')
+    status === 'DEADLINE_EXCEEDED' ||
+    status === 'UNAVAILABLE' ||
+    status === 'RESOURCE_EXHAUSTED' ||
+    rawMsg.includes('504') ||
+    rawMsg.includes('503') ||
+    rawMsg.includes('429') ||
+    rawMsg.includes('404') ||
+    rawMsg.includes('deadline') ||
+    rawMsg.includes('expired') ||
+    rawMsg.includes('timeout') ||
+    rawMsg.includes('high demand') ||
+    rawMsg.includes('overloaded') ||
+    rawMsg.includes('resource_exhausted') ||
+    rawMsg.includes('not found') ||
+    rawMsg.includes('temporarily')
   );
 }
 
 /**
  * Executes a Gemini API task with exponential backoff retry handling (max 3 attempts).
- * Automatically tries compatible fallback models if the primary model is experiencing high demand.
+ * Automatically tries compatible fallback models if the primary model is experiencing high demand or timeouts.
  */
 export async function executeWithRetry<T>(
   taskDescription: string,
   fn: (client: GoogleGenAI, model: string) => Promise<T>,
-  maxRetries = 3
+  maxRetries = 3,
+  perAttemptTimeoutMs = 20000
 ): Promise<T> {
   const client = getAiClient();
   if (!client) {
@@ -74,9 +89,12 @@ export async function executeWithRetry<T>(
     const model = modelsToTry[(attempt - 1) % modelsToTry.length];
 
     try {
-      // Enforce 30-second timeout per attempt
+      // Enforce timeout per attempt
       const timeoutPromise = new Promise<never>((_, reject) =>
-        setTimeout(() => reject(new Error(`Gemini API request timed out after 30 seconds (${taskDescription}).`)), 30000)
+        setTimeout(
+          () => reject(new Error(`Gemini API request timed out after ${Math.round(perAttemptTimeoutMs / 1000)}s (${taskDescription}).`)),
+          perAttemptTimeoutMs
+        )
       );
 
       return await Promise.race([fn(client, model), timeoutPromise]);
@@ -85,12 +103,13 @@ export async function executeWithRetry<T>(
       console.warn(`[Gemini Attempt ${attempt}/${maxRetries} failed for ${taskDescription} using ${model}]:`, err.message || err);
 
       if (attempt < maxRetries && isRetryableError(err)) {
-        // Exponential backoff: 1000ms, 2000ms, 4000ms (+ jitter)
-        const backoffDelay = Math.pow(2, attempt - 1) * 1000 + Math.random() * 300;
-        console.log(`[Gemini] Retrying in ${Math.round(backoffDelay)}ms with alternate model...`);
+        // Exponential backoff: 800ms, 1600ms, 3200ms (+ jitter)
+        const backoffDelay = Math.pow(2, attempt - 1) * 800 + Math.random() * 250;
+        const nextModel = modelsToTry[attempt % modelsToTry.length];
+        console.log(`[Gemini] Retrying in ${Math.round(backoffDelay)}ms switching to model ${nextModel}...`);
         await new Promise((resolve) => setTimeout(resolve, backoffDelay));
       } else if (!isRetryableError(err)) {
-        // Non-retryable error (e.g. invalid schema, authentication rejected)
+        // Non-retryable error (e.g. invalid client schema, authentication rejected)
         break;
       }
     }
@@ -99,7 +118,7 @@ export async function executeWithRetry<T>(
   // Construct user-friendly error message based on error type
   if (isRetryableError(lastError)) {
     throw new Error(
-      'The AI model is currently experiencing high demand across Google Gemini services. Your data has been preserved. Please click "Retry" in a few moments.'
+      'The AI model is currently experiencing high demand or gateway timeouts across Google Gemini services. Your data has been preserved. Please click "Retry" in a few moments.'
     );
   }
 

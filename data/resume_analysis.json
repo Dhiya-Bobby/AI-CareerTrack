@@ -382,5 +382,194 @@
     "_id": "46432104-2bd9-4fea-a55e-8a2858499eea",
     "createdAt": "2026-11-07T06:43:22.010Z",
     "updatedAt": "2026-11-07T06:43:22.010Z"
+  },
+  {
+    "user_id": "506f9f5b-4971-40c4-acd7-9c196d2ced1f",
+    "resume_id": "09013091-52b5-4597-a487-b73ca6e5ac1b",
+    "overall_score": 88,
+    "score_explanation": "The score is based on the candidate's strong technical stack alignment, quantifiable project impact, and clean ATS-friendly structure. While the experience is strong for a student, the lack of full-time professional industry experience keeps it from a perfect score.",
+    "summary": "Alex Chen is a high-achieving Computer Science student at UC Berkeley with robust full-stack development experience and a demonstrated ability to architect scalable microservices. His background in distributed systems and real-time data processing makes him a strong candidate for competitive Software Engineering roles.",
+    "technical_skills": [
+      "Python",
+      "TypeScript",
+      "JavaScript",
+      "Java",
+      "Go",
+      "C++",
+      "SQL",
+      "HTML",
+      "CSS",
+      "React",
+      "Node.js",
+      "Express",
+      "FastAPI",
+      "Next.js",
+      "Tailwind CSS",
+      "PyTorch",
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "AWS",
+      "S3",
+      "EC2",
+      "Lambda",
+      "Docker",
+      "Git",
+      "CI/CD",
+      "REST APIs",
+      "GraphQL"
+    ],
+    "soft_skills": [
+      "Mentoring",
+      "Teaching",
+      "Collaboration",
+      "Technical Communication",
+      "Problem Solving",
+      "Documentation"
+    ],
+    "categorized_skills": {
+      "languages": [
+        "Python",
+        "TypeScript",
+        "JavaScript",
+        "Java",
+        "Go",
+        "C++",
+        "SQL",
+        "HTML/CSS"
+      ],
+      "frameworks": [
+        "React",
+        "Node.js",
+        "Express",
+        "FastAPI",
+        "Next.js",
+        "Tailwind CSS",
+        "PyTorch"
+      ],
+      "databases": [
+        "PostgreSQL",
+        "MongoDB",
+        "Redis"
+      ],
+      "tools_and_cloud": [
+        "AWS",
+        "Docker",
+        "Git",
+        "CI/CD",
+        "REST APIs",
+        "GraphQL"
+      ],
+      "soft_skills": [
+        "Mentoring",
+        "Communication",
+        "Problem Solving"
+      ]
+    },
+    "education_details": [
+      {
+        "degree": "B.S. in Computer Science",
+        "institution": "University of California, Berkeley",
+        "year": "2026 (Expected May 2026, GPA: 3.84/4.00) | Relevant Coursework: Data Structures & Algorithms, Distributed Systems, Operating Systems, Database Management Systems, Computer Networks."
+      }
+    ],
+    "projects_experience": [
+      {
+        "title": "Software Engineering Intern",
+        "organization": "CloudScale Labs (June 2025 – August 2025) | Intern Role | June 2025 – August 2025"
+      },
+      {
+        "title": "Open Source Contributor & CS Teaching Assistant",
+        "organization": "UC Berkeley (Jan 2025 – Present)"
+      },
+      {
+        "title": "AI CareerTrack",
+        "description": "Full-stack platform managing job pipelines, ATS score diagnostics, and dynamic interview simulations using AI.",
+        "highlights": [
+          "Integrated Gemini API with structured JSON schemas",
+          "Implemented full-stack architecture"
+        ]
+      },
+      {
+        "title": "Real-Time Distributed Chat Engine",
+        "description": "Horizontally scalable chat server handling high concurrency.",
+        "highlights": [
+          "10,000 concurrent WebSocket connections with <15ms latency",
+          "Implemented JWT token rotation and read-replica caching"
+        ]
+      }
+    ],
+    "structure_evaluation": {
+      "formatting_score": 95,
+      "impact_score": 90,
+      "clarity_score": 95,
+      "ats_compatibility": "High",
+      "formatting_suggestions": [
+        "Ensure the header contact info is in a standard font to prevent parsing issues",
+        "Maintain consistent bullet point indentation throughout the document",
+        "Consider a single-column layout for maximum compatibility with all ATS systems regardless of parsing logic used by different platforms like Greenhouse or Lever."
+      ]
+    },
+    "strengths": [
+      "Excellent use of quantifiable metrics (e.g., 45,000 daily webhooks)",
+      "Strong academic performance (GPA 3.84)",
+      "Relevant and modern technology stack usage",
+      "Good balance of academic, professional, and independent project work"
+    ],
+    "weaknesses": [
+      "Lack of long-term full-time work experience",
+      "Limited exposure to enterprise-level software lifecycle management beyond internship",
+      "Missing specific details on team size in internship project"
+    ],
+    "improvement_suggestions": [
+      "Quantify impact on the Teaching Assistant role (e.g., impact on student grades or satisfaction)",
+      "Expand on the specific challenges faced during the Apache Kafka contribution",
+      "Clearly separate the internship experience from academic service roles for faster recruiter review"
+    ],
+    "missing_keywords": [
+      "Kubernetes",
+      "Terraform",
+      "System Design",
+      "Agile",
+      "Microservices Architecture",
+      "Performance Tuning"
+    ],
+    "job_role_matching": {
+      "target_role": "Full Stack Software Engineer",
+      "matching_skills": [
+        "Python",
+        "TypeScript",
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "AWS"
+      ],
+      "missing_skills": [
+        "Kubernetes",
+        "Cloud-native security",
+        "Advanced System Design"
+      ],
+      "match_percentage": 92
+    },
+    "improvement_recommendations": {
+      "actionable_improvements": [
+        "Add a 'Technical Proficiencies' summary at the top to highlight key stacks",
+        "Detail the scale of the Kafka contribution (lines of code or scope of bug fix)",
+        "Add a section for 'Certifications' if any AWS or relevant tech certifications exist"
+      ],
+      "recommended_skills": [
+        "Kubernetes",
+        "System Design Patterns",
+        "Terraform",
+        "gRPC"
+      ],
+      "ats_compatibility_tips": [
+        "Avoid using complex graphics, tables, or columns that may break text parsing",
+        "Use standard section headers like 'Work Experience' and 'Education' rather than stylized headings"
+      ]
+    },
+    "_id": "370a1ead-fd91-4981-9b37-73262c09c14f",
+    "createdAt": "2026-11-07T08:38:19.143Z",
+    "updatedAt": "2026-11-07T08:38:19.143Z"
   }
 ]
