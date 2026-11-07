@@ -1,0 +1,59 @@
+[
+  {
+    "user_id": "506f9f5b-4971-40c4-acd7-9c196d2ced1f",
+    "job_role": "Software Engineer",
+    "category": "Technical",
+    "difficulty": "Intermediate",
+    "question": "How would you implement a thread-safe, in-memory rate limiter supporting millions of distinct users with dynamic rate limits, optimizing for minimal memory overhead and low lock contention?",
+    "context_or_scenario": "You are designing an edge enforcement middleware for an internal Google Cloud microservice that receives high-throughput HTTP traffic (hundreds of thousands of QPS). Each authenticated user has a tier-dependent maximum burst capacity and refill rate (tokens per second). Naive implementations utilizing global mutexes or continuous background polling threads to update token balances fail under scale and exhaust resources.",
+    "rubric_points": [
+      "Algorithm selection: Uses a Token Bucket or Sliding Window Counter utilizing a lazy timestamp-based refill mechanism (calculating token replenishment on demand using elapsed time rather than active background threads).",
+      "Concurrency control: Minimizes lock contention by avoiding a single global lock, instead using fine-grained striped locks, atomic compare-and-swap (CAS) operations, or concurrent hash maps partitioned by user ID.",
+      "Memory footprint and cleanup: Keeps the per-user state minimal (e.g., storing only a 64-bit timestamp and a floating-point/integer token count) and includes an explicit eviction strategy (such as TTL-based pruning or LRU cache) to reclaim memory from inactive users.",
+      "Edge-case handling: Accounts for system clock skew/monotonic time guarantees, integer overflow, handling bursts gracefully, and discusses trade-offs of single-node local caching versus distributed consistency."
+    ],
+    "completed": false,
+    "_id": "0ce93a23-4d27-4ee6-8a2b-25a83977b00c",
+    "createdAt": "2026-11-07T06:30:10.028Z",
+    "updatedAt": "2026-11-07T06:30:10.028Z"
+  },
+  {
+    "user_id": "506f9f5b-4971-40c4-acd7-9c196d2ced1f",
+    "job_role": "Full Stack Software Engineer",
+    "category": "Technical",
+    "difficulty": "Intermediate",
+    "question": "How would you implement a thread-safe, in-memory rate limiter supporting millions of users with dynamic limits? (Role: Full Stack Software Engineer)",
+    "context_or_scenario": "You are designing an edge enforcement middleware for an internal Google Cloud or API gateway service.",
+    "rubric_points": [
+      "Token Bucket or Sliding Window Log algorithm",
+      "Concurrency handling (atomic CAS operations, Redis Lua scripts, or minimal lock contention)",
+      "Memory optimization per user key (TTL eviction)",
+      "Handling clock skew and distributed synchronization"
+    ],
+    "is_fallback": true,
+    "source": "Predefined Question Bank (Offline / Gemini Unavailable)",
+    "completed": false,
+    "_id": "9bf06b54-ace6-42f0-a998-1d989ae171cb",
+    "createdAt": "2026-11-07T06:37:10.743Z",
+    "updatedAt": "2026-11-07T06:37:10.743Z"
+  },
+  {
+    "user_id": "506f9f5b-4971-40c4-acd7-9c196d2ced1f",
+    "job_role": "Full Stack Software Engineer",
+    "category": "Technical",
+    "difficulty": "Intermediate",
+    "question": "Explain how database indexing works under the hood (B-Trees vs Hash indexes) and how composite indexes should be ordered. (Role: Full Stack Software Engineer)",
+    "context_or_scenario": "Queries filtering by `user_id` and sorting by `application_date DESC` are taking >800ms as table grows to 5 million rows.",
+    "rubric_points": [
+      "B+ Tree node structure, leaf pointers, and range scan efficiency",
+      "Equality first, range second principle in compound indexes",
+      "Index selectivity and avoiding unindexed table scans"
+    ],
+    "is_fallback": true,
+    "source": "Predefined Question Bank (Offline / Gemini Unavailable)",
+    "completed": false,
+    "_id": "bc6597ea-c023-4d21-90c0-0c37f02868e9",
+    "createdAt": "2026-11-07T06:43:50.042Z",
+    "updatedAt": "2026-11-07T06:43:50.042Z"
+  }
+]

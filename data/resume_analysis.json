@@ -1,0 +1,386 @@
+[
+  {
+    "user_id": "506f9f5b-4971-40c4-acd7-9c196d2ced1f",
+    "resume_id": "09013091-52b5-4597-a487-b73ca6e5ac1b",
+    "overall_score": 88,
+    "summary": "High-caliber candidate with strong CS fundamentals, concrete distributed systems internship experience, and impressive full-stack projects.",
+    "technical_skills": [
+      "Python",
+      "TypeScript",
+      "JavaScript",
+      "Java",
+      "Go",
+      "C++",
+      "SQL",
+      "React",
+      "Node.js",
+      "Express",
+      "FastAPI",
+      "Docker",
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "AWS",
+      "Git"
+    ],
+    "soft_skills": [
+      "Technical Mentorship",
+      "Cross-Functional Collaboration",
+      "Agile Methodologies",
+      "Written & Verbal Communication"
+    ],
+    "education_details": [
+      {
+        "degree": "B.S. in Computer Science",
+        "institution": "University of California, Berkeley",
+        "year": "Expected May 2026",
+        "details": "GPA: 3.84/4.00, Dean’s Honors List"
+      }
+    ],
+    "projects_experience": [
+      {
+        "title": "Software Engineering Intern",
+        "organization": "CloudScale Labs",
+        "description": "Asynchronous event-driven webhook pipeline and testing automation.",
+        "highlights": [
+          "Processed 45,000+ daily webhooks with Redis Pub/Sub",
+          "94% pytest code coverage",
+          "Dockerized team onboarding workflows"
+        ]
+      },
+      {
+        "title": "AI CareerTrack Platform",
+        "organization": "Independent Project",
+        "description": "Career intelligence and interview coach using Gemini AI and React.",
+        "highlights": [
+          "Structured JSON parsing",
+          "ATS diagnostics",
+          "Skill gap analysis"
+        ]
+      }
+    ],
+    "structure_evaluation": {
+      "formatting_score": 92,
+      "impact_score": 87,
+      "clarity_score": 90,
+      "ats_compatibility": "High (Single column, standard header hierarchy, clean metric quantification)"
+    },
+    "strengths": [
+      "Strong metrics and quantification throughout (e.g., 45k+ webhooks, 94% coverage, <15ms latency).",
+      "Diverse, modern tech stack balancing systems engineering (Go, C++) and web engineering (React, FastAPI).",
+      "Excellent structural readability with clear sections for Education, Skills, Experience, and Projects."
+    ],
+    "weaknesses": [
+      "Could highlight more cloud architectural components (e.g. Terraform, Kubernetes, IAM).",
+      "Limited mention of system monitoring / observability tools like Prometheus or Datadog."
+    ],
+    "improvement_suggestions": [
+      "Add a line mentioning Kubernetes or Infrastructure as Code (Terraform) in the CloudScale Labs experience.",
+      "Specify performance benchmarks in the Distributed Chat project (e.g. throughput in requests/sec).",
+      "Include a direct link to a hosted live demo for portfolio projects."
+    ],
+    "missing_keywords": [
+      "Kubernetes (K8s)",
+      "Terraform / IaC",
+      "CI/CD Pipelines (GitHub Actions)",
+      "System Design / High Availability",
+      "Prometheus / Grafana"
+    ],
+    "_id": "035ea78b-5584-45bd-96de-f73ae3e74102",
+    "createdAt": "2026-11-07T06:18:07.104Z",
+    "updatedAt": "2026-11-07T06:18:07.104Z"
+  },
+  {
+    "user_id": "506f9f5b-4971-40c4-acd7-9c196d2ced1f",
+    "resume_id": "09013091-52b5-4597-a487-b73ca6e5ac1b",
+    "overall_score": 88,
+    "summary": "High-performing Computer Science undergraduate at UC Berkeley with solid foundational knowledge, verified internship experience, open-source contributions, and impactful full-stack/distributed systems projects. Demonstrates strong technical range across Python, Go, and TypeScript, backed by measurable metrics and clear engineering impact.",
+    "technical_skills": [
+      "Python",
+      "TypeScript",
+      "JavaScript",
+      "Java",
+      "Go",
+      "C++",
+      "SQL",
+      "HTML/CSS",
+      "React",
+      "Node.js",
+      "Express",
+      "FastAPI",
+      "Next.js",
+      "Tailwind CSS",
+      "PyTorch",
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "AWS S3",
+      "AWS EC2",
+      "AWS Lambda",
+      "Docker",
+      "Docker Compose",
+      "Git",
+      "CI/CD pipelines",
+      "REST APIs",
+      "GraphQL",
+      "WebSockets",
+      "pytest",
+      "Gemini API"
+    ],
+    "soft_skills": [
+      "Leadership",
+      "Mentorship & Teaching",
+      "Cross-functional Collaboration",
+      "Technical Communication",
+      "Problem Solving"
+    ],
+    "education_details": [
+      {
+        "degree": "B.S. in Computer Science",
+        "institution": "University of California, Berkeley",
+        "year": "Expected May 2026 (or ongoing, dates indicated relative to 2025/2026 timeline mismatch to monitor, listed May 2026 graduation with summer 2025 internship past/future tense alignment needed, e.g. currently projected May 2026 graduation). Identified as Expected May 2026 with GPA 3.84/4.00; relevant courses: Data Structures & Algorithms, Distributed Systems, Operating Systems, Database Management Systems, Computer Networks."
+      }
+    ],
+    "projects_experience": [
+      {
+        "title": "Software Engineering Intern",
+        "organization": "CloudScale Labs (June 2025 – August 2025 / Projected/Past Timeline to clarify depending on reference year. Stated as completed project/experience). Listed as Software Engineering Intern, CloudScale Labs (June 2025 – August 2025). Built event-driven notification microservice, automated regression testing, Docker onboarding."
+      },
+      {
+        "title": "Open Source Contributor & CS Teaching Assistant",
+        "organization": "UC Berkeley (Jan 2025 – Present). Supported 120+ undergraduates in algorithms; contributed to Apache Kafka Python client library."
+      },
+      {
+        "title": "AI CareerTrack – Career Intelligence & Interview Coach",
+        "organization": "Independent Project. Full-stack platform for career intelligence, ATS diagnostics, and LLM-driven structured evaluation."
+      },
+      {
+        "title": "Real-Time Distributed Chat Engine",
+        "organization": "Independent Project. Horizontally scalable real-time chat server using Go, WebSockets, Redis, and PostgreSQL."
+      }
+    ],
+    "structure_evaluation": {
+      "formatting_score": 92,
+      "impact_score": 87,
+      "clarity_score": 90,
+      "ats_compatibility": "High. The resume uses clean standard headers (EDUCATION, TECHNICAL SKILLS, WORK & LEADERSHIP EXPERIENCE, PROJECTS), lacks complex tables or columns, and utilizes action-verb-oriented bullet points containing measurable KPIs."
+    },
+    "strengths": [
+      "Strong use of the X-Y-Z formula with quantifiable impact (e.g., 45,000+ daily webhooks, 94% coverage, setup reduced from 3 hours to 15 minutes, 10,000 concurrent connections at <15ms latency).",
+      "High academic achievement from a top-tier computer science program (UC Berkeley, 3.84 GPA, core systems/distributed coursework).",
+      "Demonstrated balance of systems programming (Go, distributed chat, Kafka contributions) and applied full-stack/AI engineering (FastAPI, React, Gemini API).",
+      "Clean, ATS-friendly single-column layout without unparsable graphic elements."
+    ],
+    "weaknesses": [
+      "Potential chronological tension with the summer 2025 internship dates depending on current date (e.g., listing past tense for June-August 2025 if reviewed prior or concurrently).",
+      "Lacks explicit deployment and production monitoring details for projects (e.g., Kubernetes, Prometheus, Datadog, Terraform, CloudWatch).",
+      "Missing clear distinction between core commercial cloud experience versus hobbyist project usage."
+    ],
+    "improvement_suggestions": [
+      "Clarify cloud architecture in the CloudScale Labs role by naming specific cloud hosting and CI/CD tools used (e.g., change 'CI/CD pipelines' to 'GitHub Actions / AWS ECS').",
+      "Expand on the Apache Kafka open-source contribution with quantifiable metrics (e.g., 'Merged PR #1234 resolving connection retry latency under network partition').",
+      "Add system design and resilience specifics to the Real-Time Chat Engine project (e.g., discuss connection recovery, message broker failover, or horizontal scaling strategy)."
+    ],
+    "missing_keywords": [
+      "Kubernetes (K8s)",
+      "Microservices Architecture",
+      "System Design",
+      "Infrastructure as Code (Terraform)",
+      "GitHub Actions / Jenkins",
+      "Prometheus / Grafana",
+      "Unit Testing / Integration Testing",
+      "Object-Oriented Design (OOD)",
+      "Agile / Scrum"
+    ],
+    "_id": "093edac8-b3e0-45ed-9827-6f2b26cba76d",
+    "createdAt": "2026-11-07T06:30:19.980Z",
+    "updatedAt": "2026-11-07T06:30:19.980Z"
+  },
+  {
+    "user_id": "506f9f5b-4971-40c4-acd7-9c196d2ced1f",
+    "resume_id": "09013091-52b5-4597-a487-b73ca6e5ac1b",
+    "overall_score": 88,
+    "score_explanation": "This score was calculated based on the strong alignment of the candidate's technical stack with modern industry standards and the effective use of quantifiable metrics to describe project impact. The candidate loses minor points for lacking enterprise-scale production experience, which is expected for their experience level.",
+    "summary": "Alex Chen is a high-performing Computer Science student with strong full-stack development experience and proven technical proficiency in building scalable distributed systems. Their background in both professional internships and open-source contributions demonstrates a clear aptitude for modern cloud-native software engineering.",
+    "technical_skills": [
+      "Python",
+      "TypeScript",
+      "JavaScript",
+      "Java",
+      "Go",
+      "C++",
+      "SQL",
+      "HTML/CSS",
+      "React",
+      "Node.js",
+      "Express",
+      "FastAPI",
+      "Next.js",
+      "Tailwind CSS",
+      "PyTorch",
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "AWS",
+      "Docker",
+      "Git",
+      "CI/CD pipelines",
+      "REST APIs",
+      "GraphQL"
+    ],
+    "soft_skills": [
+      "Mentoring",
+      "Technical communication",
+      "Problem solving",
+      "Collaborative development",
+      "Leadership"
+    ],
+    "categorized_skills": {
+      "languages": [
+        "Python",
+        "TypeScript",
+        "JavaScript",
+        "Java",
+        "Go",
+        "C++",
+        "SQL",
+        "HTML/CSS"
+      ],
+      "frameworks": [
+        "React",
+        "Node.js",
+        "Express",
+        "FastAPI",
+        "Next.js",
+        "Tailwind CSS",
+        "PyTorch"
+      ],
+      "databases": [
+        "PostgreSQL",
+        "MongoDB",
+        "Redis"
+      ],
+      "tools_and_cloud": [
+        "AWS (S3, EC2, Lambda)",
+        "Docker",
+        "Git",
+        "CI/CD pipelines",
+        "REST APIs",
+        "GraphQL"
+      ],
+      "soft_skills": [
+        "Mentoring",
+        "Communication",
+        "Problem solving",
+        "Collaboration",
+        "Leadership"
+      ]
+    },
+    "education_details": [
+      {
+        "degree": "B.S. in Computer Science",
+        "details": "GPA: 3.84/4.00, Relevant Coursework: Data Structures & Algorithms, Distributed Systems, Operating Systems, Database Management Systems, Computer Networks.",
+        "institution": "University of California, Berkeley",
+        "year": "Expected May 2026"
+      }
+    ],
+    "projects_experience": [
+      {
+        "title": "Software Engineering Intern",
+        "organization": "CloudScale Labs (June 2025 – August 2025). Description: Full-cycle software development and systems engineering intern focused on backend reliability and development efficiency. Highlights: Architected an asynchronous event-driven notification microservice in Python/FastAPI processing 45,000+ daily webhooks; Designed automated regression test suite using pytest, achieving 94% code coverage; Containerized development workflows using Docker Compose, reducing team onboarding setup time from 3 hours to 15 minutes."
+      },
+      {
+        "title": "Open Source Contributor & CS Teaching Assistant",
+        "organization": "UC Berkeley (Jan 2025 – Present). Description: Academic leadership and open-source community engagement. Highlights: Guided 120+ undergraduate students through algorithms; Contributed bug fixes and documentation to Apache Kafka client library in Python."
+      },
+      {
+        "title": "AI CareerTrack",
+        "organization": "Personal Project. Description: Full-stack platform managing job pipelines, ATS score diagnostics, and dynamic interview simulations. Highlights: Built full-stack platform using Python, React, TypeScript, and MongoDB; Integrated Gemini API to compute skill match percentages."
+      },
+      {
+        "title": "Real-Time Distributed Chat Engine",
+        "organization": "Personal Project. Description: Horizontally scalable messaging system. Highlights: Developed server handling 10,000 concurrent WebSocket connections; Achieved <15ms latency; Implemented JWT token rotation and read-replica caching."
+      }
+    ],
+    "structure_evaluation": {
+      "formatting_score": 95,
+      "impact_score": 85,
+      "clarity_score": 95,
+      "ats_compatibility": "High",
+      "content_improvements": [
+        "Explicitly highlight the specific cloud infrastructure components (e.g., specific AWS services) used in the Real-Time Distributed Chat Engine project.",
+        "Expand on the 'leadership' aspect of the Teaching Assistant role by including specific metrics like student satisfaction or grading efficiency."
+      ],
+      "formatting_suggestions": [
+        "Ensure the resume remains in a single-column layout to guarantee optimal parsing by older legacy ATS systems.",
+        "Use consistent date formatting across all sections to improve visual scanability."
+      ]
+    },
+    "strengths": [
+      "Strong use of quantifiable metrics to demonstrate impact",
+      "Excellent balance between high-level architectural knowledge and implementation skills",
+      "Proficiency in modern, highly relevant technology stacks (Go, FastAPI, Docker, Redis)",
+      "Strong academic background with relevant coursework integration"
+    ],
+    "weaknesses": [
+      "Lack of explicit mention of long-term professional software lifecycle experience",
+      "Limited exposure to large-scale enterprise system design patterns beyond personal projects",
+      "Could benefit from more specific detail on CI/CD toolsets beyond general listing"
+    ],
+    "improvement_suggestions": [
+      "Explicitly map project work to specific cloud architecture diagrams or principles",
+      "Add a brief 'Professional Summary' section to synthesize the candidate's unique value proposition",
+      "Quantify the scale of the Kafka contribution (e.g., number of users impacted or specific modules improved)"
+    ],
+    "missing_keywords": [
+      "Microservices Architecture",
+      "System Design",
+      "Kubernetes",
+      "Terraform",
+      "Agile/Scrum",
+      "Test-Driven Development (TDD)"
+    ],
+    "job_role_matching": {
+      "target_role": "Full Stack Software Engineer",
+      "matching_skills": [
+        "Python",
+        "TypeScript",
+        "React",
+        "Node.js",
+        "SQL",
+        "PostgreSQL",
+        "REST APIs",
+        "Docker",
+        "AWS"
+      ],
+      "missing_skills": [
+        "Kubernetes",
+        "System Design patterns",
+        "Enterprise CI/CD pipelines",
+        "TDD expertise"
+      ],
+      "match_percentage": 90
+    },
+    "improvement_recommendations": {
+      "actionable_improvements": [
+        "Create a dedicated 'Technical Projects' sub-section that includes links to GitHub repositories.",
+        "Include a 'Leadership/Volunteer' section to better highlight the TA role separately from projects.",
+        "Add a 'Certifications' section if any AWS or specialized certifications are obtained."
+      ],
+      "recommended_skills": [
+        "Kubernetes",
+        "Terraform",
+        "gRPC",
+        "Apache Kafka (Internal Architecture)",
+        "Observability tools (Prometheus/Grafana)"
+      ],
+      "ats_compatibility_tips": [
+        "Avoid using tables or complex columns that break when parsed by standard parsers like Greenhouse.",
+        "Use standard section headers like 'Experience', 'Education', and 'Skills' rather than creative alternatives."
+      ]
+    },
+    "_id": "46432104-2bd9-4fea-a55e-8a2858499eea",
+    "createdAt": "2026-11-07T06:43:22.010Z",
+    "updatedAt": "2026-11-07T06:43:22.010Z"
+  }
+]

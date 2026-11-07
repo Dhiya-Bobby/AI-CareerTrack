@@ -1,0 +1,13 @@
+[
+  {
+    "email": "alex.chen@berkeley.edu",
+    "password_hash": "$2b$10$Oyf9fhxRQsrLtXTQy93TB.SNdAGOTM6XQDYci.pmIwEOH1F.GBXgi",
+    "full_name": "Alex Chen",
+    "target_role": "Software Engineer",
+    "education": "UC Berkeley B.S. CS",
+    "experience_level": "Entry Level / Fresher",
+    "_id": "506f9f5b-4971-40c4-acd7-9c196d2ced1f",
+    "createdAt": "2026-11-07T06:17:55.634Z",
+    "updatedAt": "2026-11-07T06:17:55.634Z"
+  }
+]

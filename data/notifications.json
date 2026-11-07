@@ -1,0 +1,36 @@
+[
+  {
+    "user_id": "506f9f5b-4971-40c4-acd7-9c196d2ced1f",
+    "title": "Welcome to AI CareerTrack",
+    "message": "Upload your resume to get instant ATS scores and personalized interview coaching.",
+    "type": "system",
+    "read": false,
+    "_id": "50939e06-889e-42b9-a466-05bc5b24a481",
+    "createdAt": "2026-11-07T06:17:55.637Z",
+    "updatedAt": "2026-11-07T06:17:55.637Z"
+  },
+  {
+    "user_id": "506f9f5b-4971-40c4-acd7-9c196d2ced1f",
+    "title": "Upcoming Deadline: Microsoft",
+    "message": "Software Engineer - Azure Cloud deadline is in 5 days (2026-11-12).",
+    "type": "deadline",
+    "related_application_id": "5f0e1673-fbe8-409d-b813-f55a6b6ea9d1",
+    "read": false,
+    "due_date": "2026-11-12",
+    "_id": "869315ec-8df4-40d2-ac4a-dba97e0020a8",
+    "createdAt": "2026-11-07T06:18:07.105Z",
+    "updatedAt": "2026-11-07T06:18:07.105Z"
+  },
+  {
+    "user_id": "506f9f5b-4971-40c4-acd7-9c196d2ced1f",
+    "title": "Application Overdue: Amazon",
+    "message": "The deadline for Software Development Engineer I (SDE 1) at Amazon was 2026-11-04.",
+    "type": "deadline",
+    "related_application_id": "fe4e6174-9316-4818-b2e0-7eff962cf7fa",
+    "read": false,
+    "due_date": "2026-11-04",
+    "_id": "997d124c-7143-4302-a39a-f3b0e1f6ff8e",
+    "createdAt": "2026-11-07T06:18:07.105Z",
+    "updatedAt": "2026-11-07T06:18:07.105Z"
+  }
+]

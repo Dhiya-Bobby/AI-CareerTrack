@@ -1,0 +1,12 @@
+[
+  {
+    "user_id": "506f9f5b-4971-40c4-acd7-9c196d2ced1f",
+    "filename": "Alex_Chen_Software_Engineer_Resume.pdf",
+    "file_type": "application/pdf",
+    "file_size": 45210,
+    "raw_text": "ALEX CHEN\nSan Francisco, CA | (555) 019-2834 | alex.chen@example.edu | linkedin.com/in/alexchen-swe | github.com/alexchen-dev\n\nEDUCATION\nUniversity of California, Berkeley – B.S. in Computer Science (GPA: 3.84/4.00) | Expected May 2026\nRelevant Coursework: Data Structures & Algorithms, Distributed Systems, Operating Systems, Database Management Systems, Computer Networks.\n\nTECHNICAL SKILLS\nLanguages: Python, TypeScript, JavaScript, Java, Go, C++, SQL, HTML/CSS\nFrameworks & Libraries: React, Node.js, Express, FastAPI, Next.js, Tailwind CSS, PyTorch\nDatabases & Cloud: PostgreSQL, MongoDB, Redis, AWS (S3, EC2, Lambda), Docker, Git, CI/CD pipelines, REST APIs, GraphQL\n\nWORK & LEADERSHIP EXPERIENCE\nSoftware Engineering Intern | CloudScale Labs (June 2025 – August 2025)\n- Architected an asynchronous event-driven notification microservice in Python/FastAPI processing 45,000+ daily webhooks with Redis pub/sub.\n- Designed automated regression test suite using pytest, achieving 94% code coverage and preventing 12 deployment regressions.\n- Containerized development workflows using Docker Compose, reducing team onboarding setup time from 3 hours to 15 minutes.\n\nOpen Source Contributor & CS Teaching Assistant | UC Berkeley (Jan 2025 – Present)\n- Guided 120+ undergraduate students through binary search trees, Dijkstra shortest paths, and dynamic programming algorithms.\n- Contributed bug fixes and documentation to Apache Kafka client library in Python.\n\nPROJECTS\nAI CareerTrack – Career Intelligence & Interview Coach (Python, React, TypeScript, MongoDB, Gemini API)\n- Built full-stack platform managing job pipelines, ATS score diagnostics, and dynamic interview simulations.\n- Integrated Gemini API with structured JSON schemas to compute skill match percentages against complex job descriptions.\n\nReal-Time Distributed Chat Engine (Go, WebSockets, PostgreSQL, Redis)\n- Developed horizontally scalable chat server handling 10,000 concurrent WebSocket connections with <15ms latency.\n- Implemented JWT token rotation and message persistence in PostgreSQL with read-replica caching.",
+    "_id": "09013091-52b5-4597-a487-b73ca6e5ac1b",
+    "createdAt": "2026-11-07T06:18:07.104Z",
+    "updatedAt": "2026-11-07T06:18:07.104Z"
+  }
+]

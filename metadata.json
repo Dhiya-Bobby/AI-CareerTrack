@@ -1,0 +1,6 @@
+{
+  "name": "AI CareerTrack",
+  "description": "AI-powered job application tracker, resume analyzer, skill gap diagnostics, and interactive interview coach.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
